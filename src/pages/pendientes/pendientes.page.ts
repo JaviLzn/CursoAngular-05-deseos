@@ -16,7 +16,12 @@ export class PendientesPage {
                 
     }
 
-    listaSeleccionada ( lista: Lista) {}
+    listaSeleccionada ( lista: Lista) {
+        this.navCtrl.push(AgregarPage, {
+            tituloLista : lista.titulo,
+            listaSeleccionada : lista
+        });
+    }
 
     agregarLista() {
         const alerta = this.alertCtrl.create({
@@ -41,6 +46,10 @@ export class PendientesPage {
             }]
         });
         alerta.present();
+    }
+
+    borrarLista (lista: Lista) {
+        this.deseosService.deleleLista ( lista);
     }
 
 }

@@ -17,9 +17,14 @@ export class DeseosService {
         // console.log(this.Listas);
         
     }
-
-    agregarLista( lista: Lista){
+    
+    agregarLista( lista: Lista) {
         this.Listas.push(lista);
+        this.guardarStorage();
+    }
+
+    deleleLista (lista: Lista){
+        this.Listas = this.Listas.filter ( listaData => listaData.id !== lista.id);
         this.guardarStorage();
     }
 
