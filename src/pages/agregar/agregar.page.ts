@@ -3,10 +3,10 @@ import { Lista } from '../../models';
 import { DeseosService } from '../../services/deseos.service';
 
 @Component({
-    selector: 'page-terminados',
-    templateUrl : 'terminados.page.html'
+    selector: 'page-agregar',
+    templateUrl : 'agregar.page.html'
 })
-export class TerminadosPage {
+export class AgregarPage {
     constructor (public deseosService: DeseosService) {}
 
 
