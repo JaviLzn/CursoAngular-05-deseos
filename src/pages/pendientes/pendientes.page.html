@@ -1,9 +1,13 @@
-<ion-header>
+<ion-header color="primary">
     <ion-navbar>
         <ion-title>Mis pendientes</ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <h2>Hello pendientes</h2>
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let lista of deseosService.Listas" (click)="listaSeleccionada(lista)">
+          {{ lista.titulo }}
+        </button>
+    </ion-list>
 </ion-content>
