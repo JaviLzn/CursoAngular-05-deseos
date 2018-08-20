@@ -4,6 +4,6 @@ import { Component } from "@angular/core";
     selector: 'page-terminados',
     templateUrl : 'terminados.page.html'
 })
-export class terminadosPage {
+export class TerminadosPage {
 
 }
