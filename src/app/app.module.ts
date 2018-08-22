@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { PendientesPage } from '../pages/pendientes/pendientes.page';
 import { TerminadosPage } from '../pages/terminados/terminados.page';
 import { AgregarPage } from '../pages/agregar/agregar.page';
+import { ListasComponent } from './../components/listas.component';
 // Servicios
 import { DeseosService } from '../services/deseos.service';
 // Pipes
@@ -21,9 +22,10 @@ import { FiltroCompletadoPipe } from './../pipes/filtro-completado/filtro-comple
     MyApp,
     TabsPage,
     PendientesPage,
-    TerminadosPage, 
+    TerminadosPage,
     AgregarPage,
-    FiltroCompletadoPipe
+    FiltroCompletadoPipe,
+    ListasComponent
   ],
   imports: [
     BrowserModule,

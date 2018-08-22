@@ -13,14 +13,7 @@ export class PendientesPage {
     constructor (public deseosService: DeseosService,
                  private navCtrl: NavController,
                  private alertCtrl: AlertController) {
-                
-    }
 
-    listaSeleccionada ( lista: Lista) {
-        this.navCtrl.push(AgregarPage, {
-            tituloLista : lista.titulo,
-            listaSeleccionada : lista
-        });
     }
 
     agregarLista() {
@@ -48,8 +41,5 @@ export class PendientesPage {
         alerta.present();
     }
 
-    borrarLista (lista: Lista) {
-        this.deseosService.deleleLista ( lista);
-    }
 
 }
